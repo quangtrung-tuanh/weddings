@@ -54,10 +54,10 @@ img{max-width:100%;display:block}
   margin-bottom:1.4rem;
 }
 .intro h1{
-  font-family:'Allura',cursive;font-weight:400;
-  font-size:clamp(3.4rem,9vw,6.6rem);line-height:.95;margin-bottom:1rem;color:var(--ink);
+  font-family:'Cormorant Garamond',serif;font-weight:300;
+  font-size:clamp(2.6rem,7vw,5.4rem);line-height:1.05;margin-bottom:1rem;color:var(--ink);
 }
-.intro h1 .amp{font-family:inherit;color:var(--rose);font-style:normal;display:inline-block;margin:0 .18em;font-size:.8em;vertical-align:.08em}
+.intro h1 .amp{font-family:'Allura',cursive;color:var(--rose);font-style:normal;display:inline-block;margin:0 .2em;font-size:.7em;vertical-align:.15em}
 .intro p{
   max-width:600px;margin:0 auto;color:var(--soft-ink);
   font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.2rem;line-height:1.6;
@@ -211,11 +211,11 @@ img{max-width:100%;display:block}
   box-shadow:0 22px 46px -18px rgba(168,89,99,.45);
 }
 .card.c2 .card-thumb::after{
-  background:linear-gradient(180deg, rgba(0,0,0,.06) 0%, rgba(0,0,0,0) 34%, rgba(168,89,99,.54) 72%, rgba(91,46,51,.82) 100%);
+  background:linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(168,89,99,.6) 60%, rgba(91,46,51,.85) 100%);
 }
 .card.c2 .card-overlay{
-  display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
-  text-align:center;padding:2.2rem 1.4rem 1.6rem;gap:.65rem;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:2rem 1.4rem;gap:.8rem;
 }
 .card.c2 .invite-tag{
   font-family:'DM Sans',sans-serif;font-weight:600;letter-spacing:.45em;
@@ -283,7 +283,7 @@ img{max-width:100%;display:block}
 
 /* Per-card hue overlay */
 .card.c1 .card-thumb::after{background:linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(96,72,40,.78) 100%)}
-.card.c2 .card-thumb::after{background:linear-gradient(180deg, rgba(0,0,0,.06) 0%, rgba(0,0,0,0) 34%, rgba(168,89,99,.54) 72%, rgba(91,46,51,.82) 100%)}
+.card.c2 .card-thumb::after{background:linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(168,89,99,.78) 100%)}
 .card.c3 .card-thumb::after{background:linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(50,30,32,.82) 100%)}
 .card.c4 .card-thumb::after{background:linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(110,86,40,.78) 100%)}
 .card.c5 .card-thumb::after{background:linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(61,71,54,.78) 100%)}
@@ -314,17 +314,12 @@ footer .small{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.25e
 @media (max-width:760px){
   .intro{padding:4rem 1rem 1.5rem}
   .intro::before{height:40px}
-  .intro h1{font-size:clamp(2.55rem,11.2vw,3.25rem);white-space:nowrap}
   .cd-banner{padding:1.6rem 1.2rem;border-radius:20px}
   .cd-banner .label{font-size:.75rem;letter-spacing:.4em}
   .cd-grid{grid-template-columns:repeat(4,1fr);gap:.55rem}
   .cd-grid > div{padding:.9rem .3rem;border-radius:12px}
   .cd-lbl{font-size:.68rem;letter-spacing:.2em}
   .cd-event{font-size:1.25rem;line-height:1.5}
-  .card.c2 .invite-names{
-    font-size:clamp(1.6rem,7.2vw,2rem);
-    white-space:nowrap;
-  }
   .grid{padding:0 1rem 1.5rem;gap:1.2rem}
   .category-head{margin-top:3.5rem;padding:0 1rem;flex-wrap:wrap}
   .category-head h2{font-size:1.4rem;flex-basis:100%}
@@ -352,7 +347,7 @@ footer .small{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.25e
       <div><span class="cd-num" data-s>--</span><span class="cd-lbl">Giây</span></div>
     </div>
     <div class="cd-event">
-      <b>Chủ Nhật · 31 tháng 5, 2026</b> <br/> 10 giờ sáng<br/>
+      <b>Chủ Nhật · 31 tháng 5, 2026</b> &middot; 8 giờ sáng<br/>
       Tư Gia — Thôn Trịnh Mỹ, Hưng Yên
     </div>
   </div>
@@ -371,7 +366,7 @@ footer .small{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.25e
       <h2 class="invite-names">Quang Trung <span class="amp">&amp;</span> Tú Anh</h2>
       <span class="card-cta">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7l8 6 8-6M4 7v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7M4 7l8-4 8 4"/></svg>
-        Mở thiệp mời
+        Mở phong bì
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </span>
       <div class="invite-hint">
@@ -390,7 +385,7 @@ footer .small{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.25e
 </footer>
 
 <script>
-const TARGET = new Date('2026-05-31T10:00:00+07:00').getTime();
+const TARGET = new Date('2026-05-31T08:00:00+07:00').getTime();
 function tick(){
   const diff = Math.max(0, TARGET - Date.now());
   const d = Math.floor(diff/86400000);
